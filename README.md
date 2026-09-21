@@ -64,19 +64,29 @@ Task Manager API/
 │
 ├── apps/
 │   ├── accounts/
-│   │   └── api/
-│   │       └── urls.py
+│   │   ├── api/
+│   │   │   ├── serializer.py
+│   │   │   ├── urls.py
+│   │   │   └── views.py
+│   │   ├── migrations/
+│   │   ├── admin.py
+│   │   ├── apps.py
+│   │   ├── models.py
+│   │   ├── tests.py
+│   │   └── views.py
 │   │
 │   └── tasks/
 │       ├── api/
-│       │   ├── serializers.py
+│       │   ├── permissions.py
+│       │   ├── serializer.py
 │       │   ├── urls.py
 │       │   └── views.py
-│       │
 │       ├── migrations/
+│       ├── admin.py
+│       ├── apps.py
 │       ├── models.py
-│       ├── permissions.py
-│       └── tests/
+│       ├── tests.py
+│       └── views.py
 │
 ├── config/
 │   ├── settings.py
