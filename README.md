@@ -118,14 +118,27 @@ Users can register and then log in to receive:
 POST /api/auth/register/
 ```
 
-Example:
+Example request:
 
 ```json
 {
   "username": "testing",
-  "password": "testing123"
+  "email": "testing@example.com",
+  "password": "testing123",
+  "confirm_password": "testing123"
 }
 ```
+
+The `password` and `confirm_password` fields must match.
+
+Example response:
+
+```json
+{
+  "register_successfull": "User registered successfully."
+}
+```
+
 
 ### Login
 
